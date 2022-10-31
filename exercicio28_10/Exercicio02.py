@@ -6,22 +6,30 @@
 # recuperação ou foi reprovado sem recuperação.
 
 
-prova01=float(input("Digite a nota da PRIMEIRA prova: "))
-trab01=float(input("Digite a nota 1º trabalho: "))
-prova02=float(input("Digite a nota da SEGUNDA prova: "))
-trab02=float(input("Digite a nota 2º trabalho: "))
-prova03=float(input("Digite a nota da TERCEIRA prova: "))
-trab03=float(input("Digite a nota 3º trabalho: "))
-prova04=float(input("Digite a nota da QUARTA prova: "))
-trab04=float(input("Digite a nota 4º trabalho: "))
+nota2p = float(input("digite a nota da prova no segundo bimestre "))
+nota2t = float(input("digite a nota do trabalho no segundo bimestre "))
+resultadobimestral2 = nota2p + nota2t
+print("a nota obtida pelo aluno no segundo bimestre foi: " , resultadobimestral2)
 
-resultado = (prova01 + prova02 + prova03 + prova04)
+nota3p = float(input("digite a nota da prova terceiro bimestre "))
+nota3t = float(input("digite a nota do trabalho terceiro bimestre "))
+resultadobimestral3 = nota3p + nota3t
+print("a nota obtida pelo aluno no terceiro bimestre foi: " , resultadobimestral3)
 
-resultado = (trab01 + trab02 + trab03 + trab04)
 
-print("A nota da 1ª prova é: ",prova01)
-print("A nota do 2ª prova é: ",prova02)
-print("A nota do 3ª prova é: ",prova03)
-print("A nota do 4ª prova é: ",prova04)
+nota4p = float(input("digite a nota da prova quarto bimestre "))
+nota4t = float(input("digite a nota do trabalho quarto bimestre "))
 
-print("A nota obtida pelo aluno foi: " , resultado)
+resultadobimestral1 = nota1p + nota1t
+resultadobimestral2 = nota2p + nota2t
+resultadobimestral3 = nota3p + nota3t
+resultadobimestral4 = nota4p + nota4t
+print("a nota obtida pelo aluno no quarto bimestre foi: " , resultadobimestral4)
+
+resultadofinal = resultadobimestral1 + resultadobimestral2 + resultadobimestral3 + resultadobimestral4
+
+print("a nota obtida pelo aluno foi: " , resultadofinal)
+print("a nota total obtida pelo aluno foi: " , resultadofinal)
+
+if (resultadofinal >= 60):
+    print("o aluno está aprovado")
