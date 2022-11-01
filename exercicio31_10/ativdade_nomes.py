@@ -4,7 +4,19 @@
 
 # Programa ler nomes Inscritos ENEM!
 
-nome = str(input("informe um nome--> "))
+lista_ordenação_nomes = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+for i in range(20):
+    lista_ordenação_nomes[i]=str(input("digite o nome do aluno: "))
+
+sorted(str(lista_ordenação_nomes))
+
+print(sorted(lista_ordenação_nomes))
+
+
+
+
+
 
 
 
