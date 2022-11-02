@@ -12,3 +12,18 @@
 # Salário Liquido : R$
 # Obs.: Salário Bruto - Descontos = Salário Líquido.
 
+# Programa Salário
+
+print("complete as seguintes informações")
+salario = int(input("salario mensal"))
+inss = 5/100 * salario
+salarioinss = salario - inss
+sindicato = 11/100 * salario
+salariosindicato = salario - sindicato
+salarioliquido = salario -inss -sindicato
+dia = int(input("dias trabalhados por mes: "))
+salariodia = salario / dia
+hora = int(input("carga horaria por dia: "))
+salariohora = salariodia /hora
+print("salario bruto: " , salario)
+print("salario bruto: " , salario)
