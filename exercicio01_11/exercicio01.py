@@ -20,10 +20,15 @@ inss = 5/100 * salario
 salarioinss = salario - inss
 sindicato = 11/100 * salario
 salariosindicato = salario - sindicato
-salarioliquido = salario -inss -sindicato
+salaliquido = salario -inss -sindicato
 dia = int(input("dias trabalhados por mes: "))
 salariodia = salario / dia
 hora = int(input("carga horaria por dia: "))
 salariohora = salariodia /hora
+
 print("salario bruto: " , salario)
-print("salario bruto: " , salario)
+print("salario recebido por dia: " , salariodia)
+print("salario recebido por hora , trabalhada: ")
+print("desconto do inss: , inss")
+print("desconto do sindicato: , sindicato")
+print(" o salario liquido é de: ", salaliquido)
