@@ -15,12 +15,13 @@
 # Programa Salário
 
 print("complete as seguintes informações")
+
 salario = int(input("salario mensal"))
 inss = 5/100 * salario
 salarioinss = salario - inss
 sindicato = 11/100 * salario
 salariosindicato = salario - sindicato
-salaliquido = salario -inss -sindicato
+salaliquido = salario -inss - sindicato
 dia = int(input("dias trabalhados por mes: "))
 salariodia = salario / dia
 hora = int(input("carga horaria por dia: "))

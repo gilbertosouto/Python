@@ -4,14 +4,13 @@
 
 # sequencia fibonacci
 
-ntermos = 12
+def fibbonacci(meses):
+    if meses >0 and meses < 3:
+        return 1
+    else:
+        return fibbonacci(meses-1)+fibbonacci(meses-2)
 
-n1, n2 = 0, 1
-contador = 0
-print("quantidade coelhos anual")
-while contador  < ntermos:
-    print(n1)
-    n = n1 + n2
-    n1 = n2
-    n2 = n
-    contador += 1
+meses = int(input("digite o número de meses: "))
+for i in range(meses):
+    casal = fibbonacci(i+1)
+    print("O numero de casal de coelhos no mês", i+1, " é: ", casal)
